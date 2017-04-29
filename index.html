@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Application Form - Big Money</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="validation.css">
+	</head>
+	<body>
+<!-- Master Wrapper -->
+		<div id="master-wrapper" class="container">
+<!-- Header -->
+			<header class="container">
+				<h1>Big Money Bank</h1>
+				<h2>Loan Application</h2>
+			</header>
+<!-- /Header -->
+<!-- Content -->
+			<form class="container">
+<!-- Personal Info-->
+				<h3>Personal Info:</h3>
+				<fieldset class="form-group container">
+					<p>Name:</p>
+					<div class="container row">
+						<label class="sr-only" for="firstName">First Name</label>
+	  					<input type="text" class="form-control col-4" id="firstName" placeholder="First">
+	  					<label class="sr-only" for="midInital">Middle Initial</label>
+	  					<input type="text" class="form-control col-1 offset-1" id="midInitial" placeholder="MI">
+	  					<label class="sr-only" for="lastName">Last Name</label>
+	  					<input type="text" class="form-control col-4 offset-1" id="lastName" placeholder="Last">
+  					</div>
+  					<p>Address:</p>
+  					
+  					<label class="sr-only" for="address">Address</label>
+  					<input typer="text" class="form-control" id="address" placeholder="Street and Number">
+  					<br>
+  					<div class="container row">
+  						<label class="sr-only" for="city">City</label>
+  						<input type="text" class="form-control col-5" id="city" placeholder="City">
+  						<label class="sr-only" for="state">State</label>
+  						<select class="custom-select col-1 offset-1" id="state" placeholder="State">
+  							<option selected>State</option>
+    						<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+  						</select>
+  						<label class="sr-only" for="zip">Zip Code</label>
+  						<input type="number" class="form-control col-3 offset-1" id="zip" placeholder="Zip Code">
+  					</div>
+  					<p>Contact:</p>
+  					<div class="container row">
+  						<label class="sr-only" for="email">Email</label>
+  						<input type="email" class="form-control col-5" id="email" placeholder="example@email.com">
+  						<label class="sr-only" for="phone">Phone Number</label>
+  						<input type="tel" class="form-control col-5 offset-2" id="id" placeholder="Telephone #">
+  					</div>
+
+				</fieldset>
+<!-- /Personal Info-->
+<!-- Employment Info-->
+				<h3>Employment Info:</h3>
+				<fieldset class="form-group container employ-info">
+					<label class="sr-only" for="occupation">Occupation</label>
+					<input type="text" class="form-control" id="occupation" placeholder="Occupation">
+					<label class="sr-only" for="employer">Employer</label>
+					<input type="text" class="form-control" id="employer" placeholder="Employer">
+					<label class="sr-only" for="employerAddress">Employer Address</label>
+					<input type="text" class="form-control" id="employerAddress" placeholder="Employer Address">
+					<label class="sr-only" for="linkedInURL">LinkedIn URL</label>
+					<input type="url" class="form-control" id="linkedInURL" placeholder="http:// LinkedIN Profile">
+				</fieldset>
+<!-- /Employment Info-->
+<!-- Loan Request Info-->
+				<h3>Loan Info:</h3>	
+				<fieldset class="form-group container">
+					<p>Loan Type</p>
+					<label class="sr-only" for="loanType">Loan Type</label>
+					<select class="custom-select" id="loanType" placeholder="State">
+						<option selected>Loan Type</option>
+						<option val="commercial">Commercial</option>
+						<option val="realEstate">Real Estate</option>
+						<option val="personal">Personal</option>
+						<option val="mortgage">Mortgage</option>
+					</select>
+					<br>
+					<p>Loan Length:</p>
+					<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="loanRadio" id="loanLength_5" value="option1\\">
+					5 Year Loan
+					</label>
+					<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="loanRadio" id="loanLength_10" value="option2">
+					10 Year Loan
+					</label>
+					<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="loanRadio" id="loanLength_15" value="option3">
+					15 Year Loan
+					</label>
+					<br>
+					<p>Special Conditions:</p>
+					<label class="form-check-label" for="downPayment">
+					<input type="checkbox" class="form-check-input" id="downPayment">
+					I have a Down Payment
+					</label>
+					<label class="form-check-label" for="outOfState">
+					<input type="checkbox" class="form-check-input" id="outOfState">
+					Out-of-State Resident
+					</label>
+  					<label class="form-check-label" for="married">
+					<input type="checkbox" class="form-check-input" id="married">
+					Married
+					</label>
+					<label class="form-check-label" for="coSign">
+					<input type="checkbox" class="form-check-input" id="coSign">
+					Loan will be co-signed
+					</label>
+					<p>Comments:</p>
+					<textarea name="comments" rows="10" cols="50">Additional Comments if Applicable	
+					</textarea>
+				</fieldset>
+<!-- /Loan Request Info-->
+				<div class="container btn-container">	
+					<input class="form-control btn" type="submit" value="Submit">
+				</div>					
+			</form>
+<!-- /Content -->
+<!-- Footer -->
+			<footer class="container">
+				
+				<p>Copywrite &copy; Big Money Bank 2017</p>
+				
+			</footer>
+<!-- /Footer -->
+		</div>
+<!-- /Master Wrapper -->
+<!-- JS Stuff -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- /JS Stuff -->
+	</body>
+</html>
